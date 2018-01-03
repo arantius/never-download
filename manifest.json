@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Never Force Download",
+  "description": "For file types which Firefox can display (image, text, PDF), never force a download.",
+  "version": "1",
+
+  "background": {
+    "scripts": ["never-download.js"]
+  },
+
+  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking"]
+}
