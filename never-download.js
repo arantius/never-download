@@ -23,9 +23,9 @@ function headerListener(e) {
   filename = filename && filename[3];
 
   //console.log('ND type:', type||null, '\ndisp:', disp, '\nfilename:', filename);
-  if (type.value.match(TYPE_REGEX)
-      || filename.match(FILENAME_REGEX)
-      || e.url.match(FILENAME_REGEX)
+  if ((type && type.value.match(TYPE_REGEX))
+      || (filename && filename.match(FILENAME_REGEX))
+      || (e && e.url && e.url.match(FILENAME_REGEX))
   ) {
     disp.value = disp.value.replace(ATTACHMENT_REGEX, ' inline')
   }
