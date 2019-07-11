@@ -4,6 +4,7 @@
   "name": "Never Force Download",
   "description": "For file types which Firefox can display (image, text, PDF), never force a download.",
   "version": "3",
+  "icons": { "256": "never-download.png" },
 
   "background": {
     "scripts": ["never-download.js"]
