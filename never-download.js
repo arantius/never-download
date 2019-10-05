@@ -22,12 +22,12 @@ function headerListener(e) {
         || (filename && filename.match(FILENAME_REGEX))
         || (ext)
     ) {
-      disp.value = disp.value.replace(ATTACHMENT_REGEX, ' inline')
+      disp.value = disp.value.replace(ATTACHMENT_REGEX, ' inline');
     }
   }
 
   // If the MIME type forces download, rewrite that.
-  if (type && type.value == 'application/octet-stream') {
+  if (type && type.value.startsWith('application/octet-stream')) {
     let m = e && e.url && e.url.match(EXTENSION_REGEX);
     switch (ext) {
     case 'gif':
