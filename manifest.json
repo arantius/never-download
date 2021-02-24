@@ -3,7 +3,7 @@
 
   "name": "Never Force Download",
   "description": "For file types which Firefox can display (e.g. image, text, PDF), never force a download.",
-  "version": "6",
+  "version": "7",
   "icons": { "256": "never-download.png" },
 
   "background": {
