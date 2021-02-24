@@ -2,7 +2,7 @@
 
 const ATTACHMENT_REGEX = /^attachment/;
 const EXTENSION_REGEX = /\.(gif|jpe?g|png|pdf|txt)$/;
-const FILENAME_REGEX = /filename[^;=\n]*=(('|").*?\2|[^;\n]*)/;
+const FILENAME_REGEX = /filename[^;=\n]*=(('|")(.*?)\2|[^;\n]*)/;
 const TYPE_REGEX = /^(image|text)|\bpdf\b/;
 
 function headerListener(e) {
